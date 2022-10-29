@@ -1,0 +1,26 @@
+:root {
+    --text: rgba(255,255,255,0.7);
+    --white: #fff;
+    --input: #3A3B3C;
+    --input-hover: #4b4b4e;
+    --active: #2D88FF;
+    --gray-light: #B0B3B8;
+    --background-content:#242526;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #18191A;
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
