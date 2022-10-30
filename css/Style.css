@@ -1,11 +1,11 @@
 :root {
-    --text: rgba(255,255,255,0.7);
+    --text: rgba(255, 255, 255, 0.7);
     --white: #fff;
     --input: #3A3B3C;
     --input-hover: #4b4b4e;
     --active: #2D88FF;
     --gray-light: #B0B3B8;
-    --background-content:#242526;
+    --background-content: #242526;
 }
 
 * {
@@ -23,4 +23,104 @@ body {
 a {
     color: var(--text);
     text-decoration: none;
+}
+
+/*------HEADER-------*/
+header {
+    background: var(--background-content);
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo svg {
+    color: var(--white);
+    height: 35px;
+    width: 35px;
+}
+
+header .search-bar {
+    position: relative;
+    width: 100%;
+}
+
+header .search-bar input {
+    width: 100%;
+    border: none;
+    background: var(--input);
+    color: var(--text);
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 20px 0 40px;
+}
+
+header .search-bar .icon {
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    color: var(--text);
+}
+
+/*-----Main menu------*/
+header .menu a {
+    display: inline-block;
+    padding: 10px 40px;
+
+}
+
+header .menu a:hover {
+    color: var(--text);
+    background: var(--input);
+    border-radius: 5px;
+
+}
+
+header .menu a svg {
+    height: 25px;
+    width: 25px;
+}
+
+header .menu .active {
+    border-bottom: 4px solid var(--active);
+    color: var(--active);
+
+}
+
+header .menu .active:hover {
+    background: none;
+    border-radius: 0px;
+    color: var(--active);
+    
+}
+
+/*----Buttons-----*/
+header .buttons a {
+    background: var(--input);
+    display: inline-flex;
+    border-radius: 100px;
+    min-width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+
+header .buttons a:hover {
+    background: #4b4d4e;
+    color: var(--text);
+}
+
+header .buttons .profile {
+    height: 40px;
+    padding: 0 7 px;
+    background: none;
+    min-width: max-content;
+}
+
+header .buttons .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 5px;
 }
